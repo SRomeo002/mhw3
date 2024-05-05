@@ -1,0 +1,62 @@
+
+body {
+    background-color:#1a1a1a;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px; 
+    border-radius: 25px;
+    margin: 120px auto; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.377); 
+}
+
+.loghi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center ;
+    width: 100%;
+    margin-bottom: -100px;
+    padding-top:30px;
+}
+
+
+.title {
+    display: flex;
+    font-family: 'DIN Neuzeit Grotesk LT W01 Lt';
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 24px; 
+    margin-bottom: 20px;
+    margin-top: -60px;
+    padding-bottom: 30px;
+}
+
+.button {
+    font-family: 'DIN Neuzeit Grotesk LT W01 Lt';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    width: 70px;
+    background-color: #bb202d;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #bb202d51;
+}
+

@@ -1,0 +1,304 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#1a1a1a;
+}
+
+ /*-------- BANNER -----------*/ 
+.titolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bb202d;
+    height: 230px;
+    width: 100%; 
+}
+
+
+.logo {
+    display: flex ;
+    margin-top: 10px;
+    margin-bottom: -50px;
+}
+.titolo h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'FontsFree Net MikaMelvas MonteriaRegular';
+    color:black;
+    letter-spacing: 2px;
+    font-size: 90px;    
+  }
+
+
+.titolo h2 {
+    display: flex;
+    align-items: center;
+    
+    font-family: 'obrazec';
+    font-size: 90px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: -45px;
+    color:white;
+    text-shadow: #1a1a1a8d;
+  }
+  
+
+
+  @media screen and (max-width: 900px) {
+    .titolo h1 {
+        font-size: 70px;
+        margin-top: 50px; 
+        margin-bottom: 40px;
+      }
+    
+      .titolo h2{
+        font-size: 80px; 
+        margin-top: -20px;
+      }
+    
+      .titolo {
+        height: 200px;
+      }
+    
+  }
+  
+  @media screen and (max-width: 767px) {
+    .titolo h1 {
+        font-size: 60px; 
+      }
+    
+      .titolo h2{
+        font-size: 65px;
+        margin-top: -25px;  
+      }
+    
+      .titolo {
+        height: 170px;
+      }
+    }
+
+  
+  
+  @media screen and (max-width: 550px) {
+
+    .logo img{
+      width: 75px;  
+    }
+    .titolo h1 {
+      font-size: 30px; 
+    }
+  
+    .titolo h2{
+      font-size: 45px;
+      margin-top: -15px; 
+    }
+  
+    .titolo {
+      height: 130px;
+    } 
+  }
+  
+ 
+
+
+ /*-------- CONTAINER COCKTAIL -----------*/ 
+
+/*ridotto*/ 
+.menu-container {
+    max-width: 70vw;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail-ridotta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'DIN Neuzeit Grotesk LT W01 Lt';
+    font-size: 30px;
+}
+
+
+.random-cocktails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.random-cocktails img {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.expand-button {
+    font-size: 24px;
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #bb202d;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.expand-button:hover {
+    background-color: #bb202d6e;
+}
+
+@media screen and (max-width: 500px) {
+    .cocktail-ridotta{
+        font-size: 25px;
+    }
+
+    .random-cocktails img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cocktail-ridotta{
+        font-size: 20px;
+    }
+
+    .random-cocktails img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+/*completo*/ 
+
+.menu-completo {
+    display: none;
+      
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.menu-completo input[type="search"] {
+
+    text-align: center;
+    width: 60%; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+.menu-completo input:focus{
+    border-color: #bb202d;
+}
+
+
+
+#search-button {
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: #bb202d;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#search-button:hover {
+    background-color: #bb202d6e;
+}
+
+
+.reduce {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.reduce-button {
+    font-size: 16px;
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: #bb202d;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: -20px;  
+}
+
+.reduce-button:hover{
+    background-color: #bb202d6e;
+}
+
+
+.cocktail-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cocktail-lista .bevanda {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.cocktail-lista .bevanda img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail-lista .bevanda h3 {
+    font-family: 'DIN Neuzeit Grotesk LT W01 Lt';
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.versione-completa {
+    display: none;
+}
+
+.versione-completa .cocktail-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.versione-completa .cocktail-lista .bevanda {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
